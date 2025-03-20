@@ -43,9 +43,9 @@
   ;; Add alias to not break Emacs <28.
   (defalias 'image-type-from-file-name 'image-supported-file-p))
 
-;; Compatibility definitions for Org-mode < 9.8
-(unless (boundp 'org-link-preview-overlays)
-  (defalias 'org-inline-image-overlays 'org-link-preview-overlays))
+;; ;; Compatibility definitions for Org-mode < 9.8
+;; (unless (boundp 'org-link-preview-overlays)
+;;   (defalias 'org-inline-image-overlays 'org-link-preview-overlays))
 
 (defun org-image-update-overlay (file link &optional data-p refresh)
   "Create image overlay for FILE associtated with org-element LINK.
